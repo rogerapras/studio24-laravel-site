@@ -1,0 +1,164 @@
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(1.334em) translateZ(0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(1.334em) translateZ(0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(1.334em) translateZ(0);
+        -moz-transform: translateX(1.334em) translateZ(0);
+        -ms-transform: translateX(1.334em) translateZ(0);
+        -o-transform: translateX(1.334em) translateZ(0);
+        transform: translateX(1.334em) translateZ(0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ============================ */
+/* SOCIAL ICONS                 */
+/* ============================ */
+.social-icon {
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    transition-timing-function: ease;
+    text-align: center;
+    display: inline-block;
+    width: 40px;
+    height: 38px;
+    padding: 9px 0px;
+    color: white;
+    margin: 2px;
+    /* Color each button differently */
+}
+.social-icon:nth-child(1) {
+    /* Animation */
+    -webkit-animation: fadeInRight 0.6s 0.25s forwards;
+    animation: fadeInRight 0.6s 0.25s forwards;
+    opacity: 0;
+    /* Color */
+}
+.social-icon:nth-child(1):hover, .social-icon:nth-child(1):active, .social-icon:nth-child(1):focus {
+    opacity: 1;
+    background-color: #00b29a;
+}
+.social-icon:nth-child(2) {
+    /* Animation */
+    -webkit-animation: fadeInRight 0.6s 0.5s forwards;
+    animation: fadeInRight 0.6s 0.5s forwards;
+    opacity: 0;
+    /* Color */
+}
+.social-icon:nth-child(2):hover, .social-icon:nth-child(2):active, .social-icon:nth-child(2):focus {
+    opacity: 1;
+    background-color: #00b2af;
+}
+.social-icon:nth-child(3) {
+    /* Animation */
+    -webkit-animation: fadeInRight 0.6s 0.75s forwards;
+    animation: fadeInRight 0.6s 0.75s forwards;
+    opacity: 0;
+    /* Color */
+}
+.social-icon:nth-child(3):hover, .social-icon:nth-child(3):active, .social-icon:nth-child(3):focus {
+    opacity: 1;
+    background-color: #00a1b2;
+}
+.social-icon:nth-child(4) {
+    /* Animation */
+    -webkit-animation: fadeInRight 0.6s 1s forwards;
+    animation: fadeInRight 0.6s 1s forwards;
+    opacity: 0;
+    /* Color */
+}
+.social-icon:nth-child(4):hover, .social-icon:nth-child(4):active, .social-icon:nth-child(4):focus {
+    opacity: 1;
+    background-color: #008cb2;
+}
+.social-icon:nth-child(5) {
+    /* Animation */
+    -webkit-animation: fadeInRight 0.6s 1.25s forwards;
+    animation: fadeInRight 0.6s 1.25s forwards;
+    opacity: 0;
+    /* Color */
+}
+.social-icon:nth-child(5):hover, .social-icon:nth-child(5):active, .social-icon:nth-child(5):focus {
+    opacity: 1;
+    background-color: #0077b2;
+}
+.social-icon:nth-child(6) {
+    /* Animation */
+    -webkit-animation: fadeInRight 0.6s 1.5s forwards;
+    animation: fadeInRight 0.6s 1.5s forwards;
+    opacity: 0;
+    /* Color */
+}
+.social-icon:nth-child(6):hover, .social-icon:nth-child(6):active, .social-icon:nth-child(6):focus {
+    opacity: 1;
+    background-color: #0062b2;
+}
+.social-icon:nth-child(7) {
+    /* Animation */
+    -webkit-animation: fadeInRight 0.6s 1.75s forwards;
+    animation: fadeInRight 0.6s 1.75s forwards;
+    opacity: 0;
+    /* Color */
+}
+.social-icon:nth-child(7):hover, .social-icon:nth-child(7):active, .social-icon:nth-child(7):focus {
+    opacity: 1;
+    background-color: #004eb2;
+}
+.social{
+    margin-top: 7px;
+}
+
+.social-bottom a{
+    text-align:center;
+    width:36px;
+    height:36px;
+    float:left;
+    background:#fff;
+    /*border:1px solid #ccc;*/
+    /*box-shadow:0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);*/
+    border-radius:46px;
+    margin:0 0px;
+    padding:3px;
+    color:#000;
+}
+.github a:hover{background:#191919;color:#fff;}
+.google-pluse a:hover{background:#DD4B39;color:#fff;}
+.twitter a:hover{background:#00acee;color:#fff;}
+.instagram a:hover{background:#3f729b;color:#fff;}
+.facebook a:hover{background:#3b5998;color:#fff;}
+.vk a:hover{background:#5d84ae;color:#fff;}
