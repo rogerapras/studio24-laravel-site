@@ -39,7 +39,7 @@ Route::prefix('services')->group(function(){
     Route::get('{service}', 'ServiceController@show');
 });
 
-//Review Controller Route
+// Review Controller Route
 Route::get('/reviews', 'ReviewController@index')->name('review');
 Route::post('/reviews', 'ReviewController@store');
 
@@ -52,7 +52,7 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 Route::get('/login/{driver}', 'Auth\SocialController@redirectToProvider');
 Route::get('/login/{driver}/callback', 'Auth\SocialController@handleProviderCallback');
 
-//Filemanager Routes
+// Filemanager Routes
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/laravel-filemanager', '\Unisharp\Laravelfilemanager\controllers\LfmController@show');
     Route::post('/laravel-filemanager/upload', '\Unisharp\Laravelfilemanager\controllers\UploadController@upload');
