@@ -57,3 +57,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/laravel-filemanager', '\Unisharp\Laravelfilemanager\controllers\LfmController@show');
     Route::post('/laravel-filemanager/upload', '\Unisharp\Laravelfilemanager\controllers\UploadController@upload');
 });
+
+// Symlink from public/storage
+Route::get('/public/article_previews/{filename}', 'ArticleController@displayPreviewImage');

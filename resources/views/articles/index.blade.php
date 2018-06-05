@@ -11,7 +11,7 @@
                 @foreach($articles->chunk(3) as $chunk)
                     <div class="row off-2">
                         @foreach($chunk as $article)
-                            <div class="grid_4"><img src="{{ Storage::url($article->preview_img) }}"
+                            <div class="grid_4"><img src="{{ $article->preview_img }}"
                                                      style="height: 217px; width:370px;">
                                 <h3>{{ $article->title }}</h3>
                                 <p>{{ $article->preview_text }}</p>

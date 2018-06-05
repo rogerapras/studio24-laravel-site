@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class ArticleController extends Controller
 {
@@ -129,5 +130,16 @@ class ArticleController extends Controller
         $article->delete();
 
         return redirect($this->redirectTo);
+    }
+
+    /**
+     * Return image from Storage path
+     *
+     * @param $filename
+     * @return mixed
+     */
+    public function displayPreviewImage($filename)
+    {
+        return Image::make(storage_path().'/app/public/article_previews/'.$filename)->response();
     }
 }
