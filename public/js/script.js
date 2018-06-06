@@ -73,30 +73,23 @@ include('/js/jquery.easing.1.3.js');
  ========================================================*/
 ;
 (function ($) {
-    var o = $('html');
-    if (o.hasClass('desktop')) {
-        include('/js/jquery.mousewheel.min.js');
-        include('/js/jquery.simplr.smoothscroll.min.js');
+    var ua = detect.parse(navigator.userAgent);
+    if (ua.browser.family !== 'Chrome') {
+        var o = $('html');
+        if (o.hasClass('desktop')) {
+            include('js/jquery.mousewheel.min.js');
+            include('js/jquery.simplr.smoothscroll.min.js');
 
-        $(document).ready(function () {
-            $.srSmoothscroll({
-                step: 150,
-                speed: 800
+            $(document).ready(function () {
+                $.srSmoothscroll({
+                    step: 150,
+                    speed: 800
+                });
             });
-        });
+        }
     }
+
 })(jQuery);
-
-/* Copyright Year
- ========================================================*/
-;
-// (function ($) {
-//     var currentYear = (new Date).getFullYear();
-//     $(document).ready(function () {
-//         $("#copyright-year").text((new Date).getFullYear());
-//     });
-// })(jQuery);
-
 
 /* Superfish menus
  ========================================================*/
@@ -272,6 +265,6 @@ var o = $('#camera');
 /* Mailform
 =============================================*/
 ;(function ($) {
-    include('/js/mailform/jquery.form.min.js');
-    include('/js/mailform/jquery.rd-mailform.min.c.js');
+    // include('/js/mailform/jquery.form.min.js');
+    // include('/js/mailform/jquery.rd-mailform.min.c.js');
 })(jQuery);

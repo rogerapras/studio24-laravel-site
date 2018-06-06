@@ -14,6 +14,7 @@
     @include('layouts.footer')
 </div>
 @section('scripts')
+    <script src="/js/detect.js"></script>
     <script src="/js/script.js"></script>
 @show
 </body>

@@ -12,7 +12,7 @@
                 @if(Auth::check() && Auth::user()->isAdmin())
                     <p><a href="/pages/edit/{{ $page->id }}"><i class="fa fa-pencil-square-o"></i></a></p>
                 @endif
-                {{ $page->content }}
+                {!! $page->content !!}
             </div>
         </section>
     </main>

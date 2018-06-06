@@ -29,7 +29,7 @@ Route::prefix('articles')->group(function () {
 });
 
 // Service Controller Route
-Route::prefix('services')->group(function(){
+Route::prefix('services')->group(function () {
     Route::get('/', 'ServiceController@index')->name('services');
     Route::post('/', 'ServiceController@store');
     Route::post('edit/{service}', 'ServiceController@update');
@@ -59,4 +59,4 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 // Symlink from public/storage
-Route::get('/public/article_previews/{filename}', 'ArticleController@displayPreviewImage');
+Route::get('/article_previews/{filename}', 'ArticleController@displayPreviewImage');
