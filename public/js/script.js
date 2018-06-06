@@ -87,17 +87,6 @@ include('/js/jquery.easing.1.3.js');
     }
 })(jQuery);
 
-/* Copyright Year
- ========================================================*/
-;
-// (function ($) {
-//     var currentYear = (new Date).getFullYear();
-//     $(document).ready(function () {
-//         $("#copyright-year").text((new Date).getFullYear());
-//     });
-// })(jQuery);
-
-
 /* Superfish menus
  ========================================================*/
 ;
@@ -272,6 +261,6 @@ var o = $('#camera');
 /* Mailform
 =============================================*/
 ;(function ($) {
-    include('/js/mailform/jquery.form.min.js');
-    include('/js/mailform/jquery.rd-mailform.min.c.js');
+    // include('/js/mailform/jquery.form.min.js');
+    // include('/js/mailform/jquery.rd-mailform.min.c.js');
 })(jQuery);
