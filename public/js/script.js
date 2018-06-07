@@ -19,10 +19,10 @@ include('/js/jquery.easing.1.3.js');
  ========================================================*/
 ;
 (function ($) {
-    if(isIE() && isIE() < 11){
+    if (isIE() && isIE() < 11) {
         include('/js/pointer-events.js');
         $('html').addClass('lt-ie11');
-        $(document).ready(function(){
+        $(document).ready(function () {
             PointerEventsPolyfill.initialize({});
         });
     }
@@ -73,22 +73,18 @@ include('/js/jquery.easing.1.3.js');
  ========================================================*/
 ;
 (function ($) {
-    var ua = detect.parse(navigator.userAgent);
-    if (ua.browser.family !== 'Chrome') {
-        var o = $('html');
-        if (o.hasClass('desktop')) {
-            include('js/jquery.mousewheel.min.js');
-            include('js/jquery.simplr.smoothscroll.min.js');
+    var o = $('html');
+    if (o.hasClass('desktop')) {
+        include('js/jquery.mousewheel.min.js');
+        include('js/jquery.simplr.smoothscroll.min.js');
 
-            $(document).ready(function () {
-                $.srSmoothscroll({
-                    step: 150,
-                    speed: 800
-                });
+        $(document).ready(function () {
+            $.srSmoothscroll({
+                step: 150,
+                speed: 800
             });
-        }
+        });
     }
-
 })(jQuery);
 
 /* Superfish menus
@@ -119,7 +115,31 @@ include('/js/jquery.easing.1.3.js');
             var o = $('#google-map');
             if (o.length > 0) {
                 o.googleMap({
-                    styles: [{"featureType":"water","elementType":"all","stylers":[{"hue":"#76aee3"},{"saturation":38},{"lightness":-11},{"visibility":"on"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"hue":"#8dc749"},{"saturation":-47},{"lightness":-17},{"visibility":"on"}]},{"featureType":"poi.park","elementType":"all","stylers":[{"hue":"#c6e3a4"},{"saturation":17},{"lightness":-2},{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"hue":"#cccccc"},{"saturation":-100},{"lightness":13},{"visibility":"on"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"hue":"#5f5855"},{"saturation":6},{"lightness":-31},{"visibility":"on"}]},{"featureType":"road.local","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"all","stylers":[]}]
+                    styles: [{
+                        "featureType": "water",
+                        "elementType": "all",
+                        "stylers": [{"hue": "#76aee3"}, {"saturation": 38}, {"lightness": -11}, {"visibility": "on"}]
+                    }, {
+                        "featureType": "road.highway",
+                        "elementType": "all",
+                        "stylers": [{"hue": "#8dc749"}, {"saturation": -47}, {"lightness": -17}, {"visibility": "on"}]
+                    }, {
+                        "featureType": "poi.park",
+                        "elementType": "all",
+                        "stylers": [{"hue": "#c6e3a4"}, {"saturation": 17}, {"lightness": -2}, {"visibility": "on"}]
+                    }, {
+                        "featureType": "road.arterial",
+                        "elementType": "all",
+                        "stylers": [{"hue": "#cccccc"}, {"saturation": -100}, {"lightness": 13}, {"visibility": "on"}]
+                    }, {
+                        "featureType": "administrative.land_parcel",
+                        "elementType": "all",
+                        "stylers": [{"hue": "#5f5855"}, {"saturation": 6}, {"lightness": -31}, {"visibility": "on"}]
+                    }, {
+                        "featureType": "road.local",
+                        "elementType": "all",
+                        "stylers": [{"hue": "#ffffff"}, {"saturation": -100}, {"lightness": 100}, {"visibility": "simplified"}]
+                    }, {"featureType": "water", "elementType": "all", "stylers": []}]
                 });
             }
         });
@@ -133,7 +153,7 @@ include('/js/jquery.easing.1.3.js');
 (function ($) {
     var o = $('html');
 
-    if ((navigator.userAgent.toLowerCase().indexOf('msie') == -1 ) || (isIE() && isIE() > 9)) {
+    if ((navigator.userAgent.toLowerCase().indexOf('msie') == -1) || (isIE() && isIE() > 9)) {
         if (o.hasClass('desktop')) {
             include('/js/wow.js');
 
@@ -153,8 +173,8 @@ include('/js/jquery.easing.1.3.js');
         include('/js/modal.js');
         include('/js/TMForm.js');
 
-        if($('#contact-form .recaptcha').length > 0){
-        	include('//www.google.com/recaptcha/api/js/recaptcha_ajax.js');
+        if ($('#contact-form .recaptcha').length > 0) {
+            include('//www.google.com/recaptcha/api/js/recaptcha_ajax.js');
         }
     }
 })(jQuery);
@@ -210,7 +230,7 @@ document.write('<meta name="viewport" content="width=device-width,initial-scale=
 /* Camera
 ========================================================*/
 ;(function ($) {
-var o = $('#camera');
+    var o = $('#camera');
     if (o.length > 0) {
         if (!(isIE() && (isIE() > 9))) {
             include('/js/jquery.mobile.customized.min.js');
@@ -253,9 +273,9 @@ var o = $('#camera');
                 nav: false,
                 navClass: ['owl-prev fa fa-angle-left', 'owl-next fa fa-angle-right'],
                 responsive: {
-                    0: { items: 1 },
-                    768: { items: 1},
-                    980: { items: 1}
+                    0: {items: 1},
+                    768: {items: 1},
+                    980: {items: 1}
                 }
             });
         });
