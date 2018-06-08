@@ -19,3 +19,4 @@
 </html>
 <script src="/js/html5shiv.js"></script><![endif]-->
 <script src="/js/device.min.js"></script>
+@include('layouts.metrika')
